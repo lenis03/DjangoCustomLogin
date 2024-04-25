@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
+from .managers import CustomUserManager
+
 
 class CustomUser(AbstractUser):
     """
@@ -13,7 +15,7 @@ class CustomUser(AbstractUser):
 
     # Other favorite fields...
 
-    objects = None
+    objects = CustomUserManager()
 
     USERNAME_FIELD = 'phone_number'
 
