@@ -21,4 +21,4 @@ class CustomUser(AbstractUser):
 
     REQUIRED_FIELDS = []
 
-    backend = ''
+    backend = 'accounts.backends.PhoneAuthenticationBackend'
