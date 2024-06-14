@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Local Apps
     'accounts.apps.AccountsConfig',
+    'home.apps.HomeConfig',
 
 ]
 
@@ -140,3 +141,6 @@ AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
     "accounts.backends.PhoneAuthenticationBackend"
 ]
+
+# Kavenegar
+Kavenegar_API = env.str('KAVENEGAR_API')

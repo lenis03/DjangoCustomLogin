@@ -11,7 +11,7 @@ class CustomUser(AbstractUser):
     username = None
     phone_number = models.CharField(max_length=11, unique=True)
     otp_code = models.PositiveSmallIntegerField(blank=True, null=True)
-    otp_code_created = models.DateTimeField(auto_now_add=True)
+    otp_code_created = models.DateTimeField(auto_now=True)
 
     # Other favorite fields...
 

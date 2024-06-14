@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerifyOtp</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="number" name="phone_number" value="{{phone_number}}" readonly>
+        <input type="number" name="otp">
+        <input type="submit" value="Verify">
+    </form>
+</body>
+</html>
